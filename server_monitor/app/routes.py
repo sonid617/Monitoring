@@ -6,4 +6,4 @@ from app.monitoring import get_system_metrics, get_disk_usage
 def index():
     cpu, memory = get_system_metrics()
     disk = get_disk_usage()
-    return render_template('/templates/index.html', cpu=cpu, memory=memory, disk=disk)
+    return render_template('index.html', cpu=cpu, memory=memory, disk=disk)
